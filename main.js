@@ -57,7 +57,36 @@ console.log(myFirstArray[13]);
 
 let myNextArray = [];
 
-myNextArray.push('Bosh');
+myNextArray.push('Bosch');
 myNextArray.push('Siemens');
 
 console.log(myNextArray);
+
+myNextArray.unshift('Delonghi');
+
+console.log(myNextArray);
+
+//////////////////////////////////////////////////////////////////////////
+//pop and shift
+
+myNextArray.pop();
+console.log(myNextArray);
+
+myNextArray.shift();
+console.log(myNextArray);
+
+//////////////////////////////////////////////////////////////////////////
+//splice
+
+let myTestArr = ['Js', 'React', 'Node', 'Mongo'];
+
+myTestArr.splice(2,1);
+
+console.log(myTestArr);
+
+//////////////////////////////////////////////////////////////////////////
+//slice
+//myTestArr = ['Js', 'React', 'Mongo'];
+let item = myTestArr.slice(1,3);
+
+console.log(item);
